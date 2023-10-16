@@ -1,2 +1,3 @@
 # ordbokene-content
-Source for Nuxt Content, ordbokene.no
+Source for text content at ordbokene.no
+
