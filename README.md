@@ -6,4 +6,4 @@ Create a subdirectory in content/ with the three letter [ISO 639-2 code](https:/
 Add your text files as seen in the existing locales. Preceding numbers in the filenames decide the order of the sections, and the first section of "help" and "about" will be shown as the introduction.
 
 ## Override text in the welcome page articles
-Add a .md file in welcome/bm or welcome/nn with the article ID as filename
+Add a .md file in welcome/bm or welcome/nn with the article ID as filename, e. g. 40922.md
