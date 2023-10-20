@@ -10,7 +10,7 @@ Rapporter tekniske feil eller kom med tilbakemeldinger på brukergrensesnittet: 
 ## Ofte stilte spørsmål:
 
 ### Hvorfor fungerer ikke appen?
-Appen Ordbøkene og innhaldet i han blir ikkje lenger oppdatert, og du bør derfor bruke denne nettsida i staden. [Les mer på infosiden](/nob/about/missing-word) on hvordan du kan opprette snarvei til ordbøkene på startskjermen.
+Appen Ordbøkene og innhaldet i han blir ikkje lenger oppdatert, og du bør derfor bruke denne nettsida i staden. [Les mer på hjelp-siden](/nob/help/missing-word) om hvordan du kan opprette snarvei til ordbøkene på startskjermen.
 
 ### Hvorfor mangler noen ord i ordbøkene?
 Det finnes mange ord, både gamle og nye, som ikke er med i ordbøkene, men som du gjerne kan bruke likevel. Normalt kommer ikke nye ord inn i ordbøkene før de har vært i bruk en stund og er etablerte i språket. I [Revisjonsprosjektet](/nob/about/revision-project) legger vi inn nye ord og fjerner umotiverte hull i ordutvalget i de to ordbøkene, men en del av disse hullene skyldes forskjeller mellom de to skriftspråkene. [Les mer på informasjonssida](/nob/missing-word)
