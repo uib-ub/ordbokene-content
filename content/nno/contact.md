@@ -9,9 +9,9 @@ Rapporter tekniske feil og gje tilbakemeldingar på brukargrensesnittet: [ordbok
 ### Kvifor manglar somme ord i ordbøkene?
 Det finst mange ord, både gamle og nye, som ikkje er med i ordbøkene, men som du gjerne kan bruke likevel. Normalt kjem ikkje nye ord inn i ordbøkene før dei har vore i bruk ei stund og er etablerte i språket. I [Revisjonsprosjektet](/nno/about/revision-project) legg vi inn nye ord og fjernar umotiverte hol i ordutvalet i dei to ordbøkene, men ein del av desse hola kjem av skilnader mellom dei to skriftspråka. [Les meir på informasjonssida](/nno/missing-word)
 
-### Kvar er bøyningskodane frå dei trykte ordbøkene?
-Du kan hake av for «Vis bøyingskodane frå dei trykte ordbøkene» i innstillingane, som du finn nedst på sida og i menyen øvst til høgre på sida.
-
 ### Kan eg sleppe å trykkje  «vis bøying»?
 Ja, du kan endre dette i [innstillingane](nno/settings), som du finn nedst på sida og i menyen øvst til høgre på sida. Hak av for «Vis alltid bøyingstabellane».
+
+### Kva sider må vere opne for at ordbøkene skal fungere på eksamen?
+[Se hvilke domener som må være åpne](/nno/help/school)
 
