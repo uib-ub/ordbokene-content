@@ -17,5 +17,5 @@ Det finst mange ord, både gamle og nye, som ikkje er med i ordbøkene, men som 
 Ja, du kan endre dette i [innstillingane](nno/settings), som du finn nedst på sida og i menyen øvst til høgre på sida. Hak av for «Vis alltid bøyingstabellane».
 
 ### Kva sider må vere opne for at ordbøkene skal fungere på eksamen?
-[Se hvilke domener som må være åpne](/nno/help/school)
+[Sjå kva domene som må vere opne. ](/nno/help/school)
 
