@@ -15,3 +15,6 @@ There are many words, both old and new, that are not included in dictionaries, b
 
 ### Can I avoid having to click "show inflection" and "show article"?
 Yes, you can change this in [settings](/eng/settings), which is located at the bottom of the page and in the navigation menu. Choose “Always show inflection tables in expanded articles”.
+
+### Which pages need to be open for the dictionaries to work during the exam?
+[See which domains must be open](/eng/help/school)
