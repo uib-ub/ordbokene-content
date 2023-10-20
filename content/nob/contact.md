@@ -16,7 +16,7 @@ Appen Ordbøkene og innholdet i den blir ikke lenger oppdatert, og du bør derfo
 Det finnes mange ord, både gamle og nye, som ikke er med i ordbøkene, men som du gjerne kan bruke likevel. Normalt kommer ikke nye ord inn i ordbøkene før de har vært i bruk en stund og er etablerte i språket. I [Revisjonsprosjektet](/nob/about/revision-project) legger vi inn nye ord og fjerner umotiverte hull i ordutvalget i de to ordbøkene, men en del av disse hullene skyldes forskjeller mellom de to skriftspråkene. [Les mer på informasjonssiden](/nob/missing-word)
 
 ### Kan jeg slippe å trykke «vis bøying»?
-Ja, du kan endre dette i [innstillingane](/nob/settings), som du finner øverst og nederst på siden. Hak av for «Vis alltid bøyingstabellene».
+Ja, du kan endre dette i [innstillingene](/nob/settings), som du finner øverst og nederst på siden. Hak av for «Vis alltid bøyingstabellene».
 
 ### Hvilke sider må være åpne for at ordbøkene skal fungere på eksamen?
 [Se hvilke domener som må være åpne](/nob/help/school)
