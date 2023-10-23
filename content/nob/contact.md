@@ -1,12 +1,4 @@
 # Kontakt oss
-## Innholdet i ordbøkene
-Spørsmål og tilbakemeldinger angående ord, bøyningsformer og annet innhold i ordbøkene: [ordbok@uib.no](mailto:ordbok@uib.no)
-
-Har du spørsmål om klar, god og korrekt språkbruk, kan du ta kontakt med [Språkrådets svartjeneste](mailto:sporsmal@sprakradet.no).
-
-## Funksjonalitet og tekniske feil
-Rapporter tekniske feil eller kom med tilbakemeldinger på brukergrensesnittet: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)
-
 ## Ofte stilte spørsmål:
 
 ### Hvorfor fungerer ikke appen?
@@ -20,3 +12,12 @@ Ja, du kan endre dette i [innstillingene](/nob/settings), som du finner øverst 
 
 ### Hvilke sider må være åpne for at ordbøkene skal fungere på eksamen?
 [Se hvilke domener som må være åpne](/nob/help/school)
+
+## Kontaktinformasjon
+### Innholdet i ordbøkene
+Spørsmål og tilbakemeldinger angående ord, bøyningsformer og annet innhold i ordbøkene: [ordbok@uib.no](mailto:ordbok@uib.no)
+
+Har du spørsmål om klar, god og korrekt språkbruk, kan du ta kontakt med [Språkrådets svartjeneste](mailto:sporsmal@sprakradet.no).
+
+### Funksjonalitet og tekniske feil
+Rapporter tekniske feil eller kom med tilbakemeldinger på brukergrensesnittet: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)

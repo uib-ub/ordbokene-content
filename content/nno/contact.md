@@ -1,10 +1,4 @@
 # Kontakt oss
-## Innhaldet i ordbøkene
-Spørsmål og tilbakemeldingar med omsyn til ord, bøyingsformer og anna innhald i ordbøkene: [ordbok@uib.no](mailto:ordbok@uib.no)
-
-## Funksjonalitet og tekniske feil
-Rapporter tekniske feil og gje tilbakemeldingar på brukargrensesnittet: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)
-
 ## Ofte stilte spørsmål:
 
 ### Kvifor fungerer ikkje appen?
@@ -18,4 +12,12 @@ Ja, du kan endre dette i [innstillingane](nno/settings), som du finn øvst og ne
 
 ### Kva sider må vere opne for at ordbøkene skal fungere på eksamen?
 [Sjå kva domene som må vere opne. ](/nno/help/school)
+
+
+## Kontaktinformasjon
+### Innhaldet i ordbøkene
+Spørsmål og tilbakemeldingar med omsyn til ord, bøyingsformer og anna innhald i ordbøkene: [ordbok@uib.no](mailto:ordbok@uib.no)
+
+### Funksjonalitet og tekniske feil
+Rapporter tekniske feil og gje tilbakemeldingar på brukargrensesnittet: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)
 

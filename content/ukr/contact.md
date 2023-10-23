@@ -1,12 +1,5 @@
 # Contact us
-## The content of the dictionaries
-Feedback and questions regarding words, inflected forms and other content of the dictionaries: [ordbok@uib.no](mailto:ordbok@uib.no)
-
-## Functionality and bug reports
-Report bugs or give feedback regarding the user interface: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)
-
 ## Frequently asked questions:
-
 ### Why isn't the app working?
 The Ordbøkene app and its content are no longer being updated, so you should use this website instead. [Read more on the help page](/ukr/help/smartphone) on how to create a shortcut to the dictionaries on your mobile device's home screen.
 
@@ -17,4 +10,12 @@ There are many words, both old and new, that are not included in dictionaries, b
 Yes, you can change this in [settings](/ukr/settings), which is located at the bottom of the page and in the navigation menu. Choose “Always show inflection tables in expanded articles”.
 
 ### Which pages need to be open for the dictionaries to work during the exam?
-[See which domains must be open](/ukr/help/school)
+[See what domains must be open](/ukr/help/school)
+
+
+## Contact information
+### The content of the dictionaries
+Feedback and questions regarding words, inflected forms and other content of the dictionaries: [ordbok@uib.no](mailto:ordbok@uib.no)
+
+### Functionality and bug reports
+Report bugs or give feedback regarding the user interface: [ordbok-teknisk@uib.no](mailto:ordbok-teknisk@uib.no)
