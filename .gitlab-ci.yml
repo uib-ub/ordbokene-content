@@ -12,7 +12,7 @@ before_script:
   - python3 -m venv .venv
   - source .venv/bin/activate
   - pip install -r src/requirements.txt
-  - mkdir -p content-components
+  - mkdir -p .output
 
 
 compile:
@@ -20,8 +20,9 @@ compile:
   - group_runner_spraaksamlingene_01
   script:
     - python src/md2vue.py
+    - tar -czvf content-components.tar.gz .output
   artifacts:
     paths:
-      - content-components
+      - content-components.tar.gz
 
 
