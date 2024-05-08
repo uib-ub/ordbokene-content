@@ -1,6 +1,5 @@
 image:
   name: "python:3.11"
-  pull_policy: if-not-present
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
