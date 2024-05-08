@@ -1,0 +1,28 @@
+image:
+  name: "python:3.11"
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - .venv/
+before_script:
+  - python3 --version
+  - python3 -m venv .venv
+  - source .venv/bin/activate
+  - pip install -r src/requirements.txt
+  - mkdir -p .output
+
+
+compile:
+  tags:
+  - group_runner_spraaksamlingene_01
+  script:
+    - python src/md2vue.py
+    - tar -czvf content-components.tar.gz -C .output .
+  artifacts:
+    paths:
+      - content-components.tar.gz
+
+
