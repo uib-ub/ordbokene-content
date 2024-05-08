@@ -65,8 +65,8 @@ for directory, locales in content.items():
     vue_component += "  </div>\n</template>\n\n"
 
 
-    # Write the Vue component to the content-components directory
-    output_file = os.path.join('content-components', f"{directory}.vue")
+    # Write the Vue component to the .output directory
+    output_file = os.path.join('.output', f"{directory}.vue")
     with open(output_file, 'w', encoding="utf8") as f:
         f.write(vue_component)
 
