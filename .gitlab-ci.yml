@@ -12,16 +12,16 @@ before_script:
   - python3 -m venv .venv
   - source .venv/bin/activate
   - pip install -r compile/requirements.txt
-  - mkdir -p .output
+  - mkdir -p content-components
 
 
 compile:
   tags:
   - group_runner_spraaksamlingene_01
   script:
-    - python compile/md2vue.py
+    - python scripts/md2vue.py
   artifacts:
     paths:
-      - .output/
+      - content-components
 
 
