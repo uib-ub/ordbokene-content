@@ -15,10 +15,6 @@ before_script:
   - pip install -r compile/requirements.txt
   - mkdir -p .output
 
-stages:
-  - compile
-
-
 
 compile:
   tags:
