@@ -3,8 +3,15 @@ import re
 import markdown
 import glob
 import bleach
+import sys
 
-ACCEPTED_TAGS = {'kbd', 'tbody', 'tr', 'td', 'th', 'table', 'img', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'ul', 'ol', 'li', 'blockquote', 'code', 'em', 'strong', 'hr', 'br', 'div', 'span', 'pre'}
+# Get tags from environment variable
+try:
+    ACCEPTED_TAGS = os.environ.get('ORDBOKENE_ACCEPTED_HTML').split()
+    print(f"Accepted tags: {ACCEPTED_TAGS}")
+except:
+    print("Environment variable ORDBOKENE_ACCEPTED_HTML not set")
+    sys.exit(1)
 
 def sanitize(raw_markdown):
     return bleach.clean(raw_markdown, tags=ACCEPTED_TAGS, strip=True)
