@@ -11,7 +11,7 @@ before_script:
   - python3 --version
   - python3 -m venv .venv
   - source .venv/bin/activate
-  - pip install -r compile/requirements.txt
+  - pip install -r src/requirements.txt
   - mkdir -p content-components
 
 
@@ -19,7 +19,7 @@ compile:
   tags:
   - group_runner_spraaksamlingene_01
   script:
-    - python scripts/md2vue.py
+    - python src/md2vue.py
   artifacts:
     paths:
       - content-components
