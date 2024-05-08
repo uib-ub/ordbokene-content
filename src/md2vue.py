@@ -17,6 +17,9 @@ def sanitize(raw_markdown):
     return bleach.clean(raw_markdown, tags=ACCEPTED_TAGS, strip=True)
 
 
+"""
+Compile pages with subpages
+"""
 # Initialize a dictionary to store the content of the markdown files
 content = {}
 
@@ -95,32 +98,39 @@ html_content = {}
 md_files = glob.glob('content/*/*.md') + glob.glob('content/*/help/*.advanced.md')
 
 for md_file in md_files:
+
     # Split the file path into parts
     parts = os.path.normpath(md_file).split(os.sep)
 
-    # Get the locale and page name from the file path
-    print(parts)
+    # Get the locale and page name from the file path   
     locale = parts[1]
     page_name = os.path.splitext(parts[-1])[0]
     page_name = re.sub(r'^\d+\.', '', page_name) # Remove the preceding numbers
+
+    if page_name not in html_content:
+        html_content[page_name] = {}
 
     # Read the markdown file
     with open(md_file, 'r', encoding="utf8") as f:
         md_content = f.read()
 
     # Convert the markdown content to HTML
-    html_content[locale] = markdown.markdown(sanitize(md_content))
+    html_content[page_name][locale] = markdown.markdown(sanitize(md_content))
 
-# Create a Vue component from the HTML content
-vue_component = "<template>\n  <div>\n"
-for locale, content in html_content.items():
-    vue_component += f"    <template v-if=\"$route.params.locale === '{locale}'\">\n"
-    vue_component += f"      {content}\n"
-    vue_component += "    </template>\n"
-vue_component += "  </div>\n</template>\n\n"
 
-# Write the Vue component to the output directory
-output_file = os.path.join('.output', f"{page_name}.vue")
-os.makedirs(os.path.dirname(output_file), exist_ok=True)
-with open(output_file, 'w', encoding="utf8") as f:
-    f.write(vue_component)
+# Write the Vue components to the output directory
+
+for page_name in html_content:
+    vue_component = "<template>\n  <div>\n"
+    for locale, content in html_content[page_name].items():
+        vue_component += f"    <template v-if=\"$route.params.locale === '{locale}'\">\n"
+        vue_component += f"      {content}\n"
+        vue_component += "    </template>\n"
+    vue_component += "  </div>\n</template>\n\n"
+
+    output_file = os.path.join('.output', f"{page_name}.vue")
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, 'w', encoding="utf8") as f:
+        print(output_file)
+        f.write(vue_component)
+
