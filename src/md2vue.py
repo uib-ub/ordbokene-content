@@ -73,20 +73,22 @@ for directory, locales in content.items():
 
 
 """
-Compile contact us page
+Compile pages without subpages (contact us and advanced search)
 """
 html_content = {}
 
 # Get all markdown files in the content directory
-md_files = glob.glob('content/*/*.md')
+md_files = glob.glob('content/*/*.md') + glob.glob('content/*/help/*.advanced.md')
 
 for md_file in md_files:
     # Split the file path into parts
     parts = os.path.normpath(md_file).split(os.sep)
 
     # Get the locale and page name from the file path
-    locale = parts[-2]
+    print(parts)
+    locale = parts[1]
     page_name = os.path.splitext(parts[-1])[0]
+    page_name = re.sub(r'^\d+\.', '', page_name) # Remove the preceding numbers
 
     # Read the markdown file
     with open(md_file, 'r', encoding="utf8") as f:
