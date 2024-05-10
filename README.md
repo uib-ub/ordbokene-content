@@ -9,6 +9,5 @@ Add your text files as seen in the existing locales. Preceding numbers in the fi
 Add a .md file in welcome/bm or welcome/nn with the article ID as filename, e. g. 40922.md
 
 ## Security: sanitation of html tags
-Html tags not found in the gitlab cicd variable ORDBOKENE_ACCEPTED_HTML will be removed.
-Add ORDBOKENE_ACCEPTED_HTML as an environment variable when developing locally.
+Html tags not found in the list found in the list in md2vue.py will be removed
 
