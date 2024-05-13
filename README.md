@@ -13,3 +13,12 @@ The markdown is sanitized and converted to vue componens by running src/md2vue.p
 Html tags and attributes not found in ALLOWED_TAGS and ALLOWED_ATTRIBUTES in md2vue will be removed.
 External contributors should not modify .gitlab-ci.yml or the files in src/
 
+# Images
+Add images by uploading them to /content-images
+Remember to have a preceding slash when using them in the markdown, otherwise the nuxt application will fail to build:
+```markdown
+![Alt text](/content-images/example-image.png)
+```
+Use html img tags if you need to tweak the size and styling of the image.
+
+
