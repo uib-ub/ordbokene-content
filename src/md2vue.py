@@ -7,8 +7,16 @@ import sys
 
 ACCEPTED_TAGS = "kbd tbody tr td th table img h1 h2 h3 h4 h5 h6 p a ul ol li blockquote code em strong hr br div span pre"
 
+ALLOWED_ATTRIBUTES = {
+    '*': ['class'],
+    'a': ['href', 'title'],
+    'img': ['src', 'alt', 'width', 'height'],
+}
+
+print(ACCEPTED_TAGS.split())
+
 def sanitize(raw_markdown):
-    return bleach.clean(raw_markdown, tags=ACCEPTED_TAGS.split(), strip=True)
+    return bleach.clean(raw_markdown, tags=ACCEPTED_TAGS.split(), strip=True, attributes=ALLOWED_ATTRIBUTES)
 
 
 """
