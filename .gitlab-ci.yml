@@ -20,7 +20,7 @@ compile:
   - group_runner_spraaksamlingene_01
   script:
     - python src/md2vue.py
-    - cp content-images .output/content-images
+    - cp content-images .output/content-images -r
     - tar -czvf content-components.tar.gz -C .output .
   artifacts:
     paths:
