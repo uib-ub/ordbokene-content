@@ -3,6 +3,8 @@ import re
 import markdown
 import glob
 import bleach
+from bs4 import BeautifulSoup
+import os
 import sys
 
 ACCEPTED_TAGS = "kbd tbody tr td th table img h1 h2 h3 h4 h5 h6 p a ul ol li blockquote code em strong hr br div span pre"
@@ -15,8 +17,19 @@ ALLOWED_ATTRIBUTES = {
 
 print(ACCEPTED_TAGS.split())
 
-def sanitize(raw_markdown):
-    return bleach.clean(raw_markdown, tags=ACCEPTED_TAGS.split(), strip=True, attributes=ALLOWED_ATTRIBUTES)
+def convert(raw_markdown):
+    cleaned = bleach.clean(raw_markdown, tags=ACCEPTED_TAGS.split(), strip=True, attributes=ALLOWED_ATTRIBUTES)
+    html = markdown.markdown(cleaned)
+
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Assert that all image paths are spelled correctly
+    for img in soup.find_all('img'):
+        src = img.get('src').lstrip('/')
+        assert os.path.isfile(src), f"Image file {src} does not exist"
+
+    return html
+
 
 
 """
@@ -45,7 +58,7 @@ for root, dirs, files in os.walk('content'):
         with open(os.path.join(root, md_file), 'r', encoding="utf8") as f:
             md_content = f.read()
             # Convert markdown to HTML
-            html_content = markdown.markdown(sanitize(md_content))
+            html_content = convert(md_content)
             # Store the HTML content in the dictionary
             if directory not in content:
                 content[directory] = {}
@@ -117,7 +130,7 @@ for md_file in md_files:
         md_content = f.read()
 
     # Convert the markdown content to HTML
-    html_content[page_name][locale] = markdown.markdown(sanitize(md_content))
+    html_content[page_name][locale] = convert(md_content)
 
 
 # Write the Vue components to the output directory
