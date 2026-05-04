@@ -39,7 +39,7 @@ trigger_redeploy:
     - job: compile
       artifacts: true
   rules:
-    - if: '$CI_COMMIT_BRANCH == "feat-meta-1430"'
+    - if: '$CI_COMMIT_BRANCH == "main"'
       changes:
         - "**/*.md"
         - "content-images/**/*"
