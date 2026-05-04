@@ -30,7 +30,7 @@ compile:
     paths:
       - content-components.tar.gz
 
-trigger_amplify_redeploy:
+trigger_redeploy:
   stage: deploy
   image: curlimages/curl:latest
   tags:
@@ -45,4 +45,4 @@ trigger_amplify_redeploy:
         - "content-images/**/*"
   before_script: []
   script:
-    - curl -X POST "$WEBHOOK"
+    - curl --fail --silent --show-error -X POST "$WEBHOOK" > /dev/null
