@@ -46,3 +46,4 @@ trigger_redeploy:
   before_script: []
   script:
     - curl --fail --silent --show-error -X POST "$WEBHOOK" > /dev/null
+    - curl --fail --silent --show-error -X POST "$WEBHOOK_PWA" > /dev/null
