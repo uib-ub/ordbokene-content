@@ -2,6 +2,9 @@ image:
   name: "python:3.11"
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+stages:
+  - build
+  - deploy
 
 cache:
   paths:
@@ -16,8 +19,9 @@ before_script:
 
 
 compile:
+  stage: build
   tags:
-  - group_runner_spraaksamlingene_01
+    - group_runner_spraaksamlingene_01
   script:
     - python src/md2vue.py
     - cp content-images .output/content-images -r
@@ -26,4 +30,19 @@ compile:
     paths:
       - content-components.tar.gz
 
-
+trigger_amplify_redeploy:
+  stage: deploy
+  image: curlimages/curl:latest
+  tags:
+    - group_runner_spraaksamlingene_01
+  needs:
+    - job: compile
+      artifacts: true
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "feat-meta-1430"'
+      changes:
+        - "**/*.md"
+        - "content-images/**/*"
+  before_script: []
+  script:
+    - curl -X POST "$WEBHOOK"
